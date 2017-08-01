@@ -1,0 +1,286 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\fractali.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\fractali.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About fractali"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "fractali Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FRACTALI_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "fractali"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,263,179,50,14
+    PUSHBUTTON      "Julia",IDC_Julia,7,7,50,14
+    PUSHBUTTON      "Mandelbrot",IDC_Mandelbrot,7,30,50,14
+    PUSHBUTTON      "Fern",IDC_FERIGA,7,55,50,14
+    LTEXT           "Nr Culori",IDC_STATIC,105,17,28,8
+    EDITTEXT        IDC_NRCULORI,141,15,96,14,ES_AUTOHSCROLL
+END
+
+IDD_FRACTALI DIALOG  0, 0, 464, 258
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fractali"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "RUN",IDC_RUN,432,7,25,14
+    PUSHBUTTON      "Exit",IDOK,432,23,25,14
+END
+
+IDD_JULIA DIALOG  0, 0, 413, 215
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Run",IDC_RUN,356,7,50,14
+    LTEXT           "p",IDC_STATIC,347,47,8,8
+    EDITTEXT        IDC_P,366,46,40,14,ES_AUTOHSCROLL
+    LTEXT           "q",IDC_STATIC,347,68,8,8
+    EDITTEXT        IDC_Q,366,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "xmin",IDC_STATIC,338,89,17,8
+    EDITTEXT        IDC_XMIN,366,88,40,14,ES_AUTOHSCROLL
+    LTEXT           "xmax",IDC_STATIC,338,111,17,8
+    EDITTEXT        IDC_XMAX,366,110,40,14,ES_AUTOHSCROLL
+    LTEXT           "ymin",IDC_STATIC,338,132,17,8
+    EDITTEXT        IDC_YMIN,366,131,40,14,ES_AUTOHSCROLL
+    LTEXT           "ymax",IDC_STATIC,338,153,17,8
+    EDITTEXT        IDC_YMAX,366,152,40,14,ES_AUTOHSCROLL
+    LTEXT           "lung",IDC_STATIC,338,175,17,8
+    EDITTEXT        IDC_LUNG,366,174,40,14,ES_AUTOHSCROLL
+    LTEXT           "inalt",IDC_STATIC,338,195,17,8
+    EDITTEXT        IDC_INALT,366,194,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Exit",IDOK,356,25,50,14
+END
+
+IDD_MANDELBROT DIALOG  0, 0, 393, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Run",IDC_RUNM,336,9,50,14
+    LTEXT           "p",IDC_STATIC,327,50,8,8
+    EDITTEXT        IDC_PM,346,49,40,14,ES_AUTOHSCROLL
+    LTEXT           "q",IDC_STATIC,327,71,8,8
+    EDITTEXT        IDC_QM,346,70,40,14,ES_AUTOHSCROLL
+    LTEXT           "xmin",IDC_STATIC,318,92,17,8
+    EDITTEXT        IDC_XMINM,346,90,40,14,ES_AUTOHSCROLL
+    LTEXT           "xmax",IDC_STATIC,318,114,17,8
+    EDITTEXT        IDC_XMAXM,346,112,40,14,ES_AUTOHSCROLL
+    LTEXT           "ymin",IDC_STATIC,318,135,17,8
+    EDITTEXT        IDC_YMINM,346,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "ymax",IDC_STATIC,318,156,17,8
+    EDITTEXT        IDC_YMAXM,346,154,40,14,ES_AUTOHSCROLL
+    LTEXT           "lung",IDC_STATIC,318,178,17,8
+    EDITTEXT        IDC_LUNGM,346,177,40,14,ES_AUTOHSCROLL
+    LTEXT           "inalt",IDC_STATIC,318,198,17,8
+    EDITTEXT        IDC_INALTM,346,197,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Exit",IDOK,336,28,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "fractali MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "fractali"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "fractali.EXE"
+            VALUE "ProductName", "fractali Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FRACTALI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_FRACTALI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 457
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_JULIA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_MANDELBROT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About fractali..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\fractali.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
